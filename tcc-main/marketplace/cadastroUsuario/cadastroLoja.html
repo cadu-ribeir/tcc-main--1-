@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Loja</title>
+
+    <!-- Fontes e Estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="form-area">
+        <div class="wrapper">
+            <h2>Cadastro de Loja</h2>       
+            <form id="formulario">
+                <input type="hidden" name="typeAccount" value="vendedor">
+
+                <div class="box">
+                    <input type="text" id="user" name="user" placeholder="Nome da loja" class="input">
+                    <i class="fa fa-building"></i>
+                </div>
+
+                <div class="box">
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="input">
+                    <i class="fa fa-envelope"></i>
+                </div>
+
+                <div class="box">
+                    <input type="tel" name="tel" id="tel" maxlength="14" placeholder="Telefone (opcional)">
+                    <i class="fa fa-phone"></i>
+                </div>
+
+                <div class="box" id="cpfBox">
+                <label for="cpf" class="label">CPF</label>
+                <input type="text" name="cpf" id="cpf" class="input" maxlength="15">
+                <a href="./cpf.html">Por que pedimos seu CPF?</a>
+                <i class="fa fa-id-card"></i>
+            </div>
+                <div class="box">
+                    <input type="password" name="pass" id="pass" placeholder="Senha" class="input">
+                    <i class="fa fa-lock"></i>
+                </div>
+
+                <div id="passContent">
+                    <span>Contém de 6 a 10 caracteres</span><br>
+                    <span>Contém letra maiúscula</span><br>
+                    <span>Contém número</span><br>
+                    <span>Conter caractere especial, ex: @,!,#</span>
+                </div>
+
+                <span id="error"></span>
+
+                <button type="submit">Criar conta comercial</button>
+            </form>
+
+            <button><a href="../login/index.html">Voltar</a></button>
+        </div>
+    </div>
+
+    <div id="userCadastrado">
+        <h3>Cadastro Concluído com sucesso 🥳</h3>
+    </d

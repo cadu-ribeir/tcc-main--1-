@@ -1,0 +1,127 @@
+
+/* Reset básico e configurações globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container centralizado com sombra sutil e bordas arredondadas */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Labels com espaçamento e tipografia leve */
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Estilos para inputs e selects */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Botão de envio com efeito hover */
+.buttonsContainer{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.buttonsContainer > button{
+    width: 50%;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#removerPromo{
+    background-color: #ed2323;
+}
+
+#removerPromo:hover{
+    background-color: #cb3434;
+}
+
+#erroMsgm{
+    color: red;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#cadastroAviso{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3cae3c;
+    box-shadow: 0px 4px 8px rgba(104, 104, 104, 0.4);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px 30px;
+    position: fixed;
+    transition: opacity .1s ease-in-out;
+}
+
+.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translate(-50%, -500%);
+    visibility: hidden;
+}
