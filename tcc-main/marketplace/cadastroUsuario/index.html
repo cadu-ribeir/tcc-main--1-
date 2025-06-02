@@ -10,64 +10,65 @@
     <title>Cadastro</title>
 </head>
 <body>  
-    <div class="formulario">
-    <div class="wrapper">
-        <h2>Crie sua conta pessoal</h2>
+    <center>
+        <div class="formulario">
+        <div class="wrapper">
+            <h2>Crie sua conta pessoal</h2>
 
-        <form id="formulario">
-            <input type="hidden" name="typeAccount" value="usuario">
+            <form id="formulario">
+                <input type="hidden" name="typeAccount" value="usuario">
 
-            <div class="box">
-                <label for="user" class="label">Nome de usuário</label>
-                <input type="text" id="user" name="user" class="input">
-                <i class="fa fa-user"></i>
-            </div>
+                <div class="box">
+                    <label for="user" class="label">Nome de usuário</label>
+                    <input type="text" id="user" name="user" class="input">
+                    <i class="fa fa-user"></i>
+                </div>
 
-            <div class="box">
-                <label for="email" class="label">E-mail</label>
-                <input type="email" name="email" id="email" class="input">
-                <i class="fa fa-envelope"></i>
-            </div>
+                <div class="box">
+                    <label for="email" class="label">E-mail</label>
+                    <input type="email" name="email" id="email" class="input">
+                    <i class="fa fa-envelope"></i>
+                </div>
 
-            <div class="box">
-                <label for="tel">Telefone (Opcional)</label>
-                <input type="tel" name="tel" id="tel" maxlength="14">
-                <i class="fa fa-phone"></i>
-            </div>
+                <div class="box">
+                    <label for="tel">Telefone (Opcional)</label>
+                    <input type="tel" name="tel" id="tel" maxlength="14">
+                    <i class="fa fa-phone"></i>
+                </div>
 
-            <div class="box" id="cpfBox">
-                <label for="cpf" class="label">CPF</label>
-                <input type="text" name="cpf" id="cpf" class="input" maxlength="15">
-                <a href="./cpf.html">Por que pedimos seu CPF?</a>
-                <i class="fa fa-id-card"></i>
-            </div>
+                <div class="box" id="cpfBox">
+                    <label for="cpf" class="label">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="input" maxlength="15">
+                    <a href="./cpf.html">Por que pedimos seu CPF?</a>
+                    <i class="fa fa-id-card"></i>
+                </div>
 
-            <div class="box">
-                <label for="pass" class="label">Senha</label>
-                <input type="password" name="pass" id="pass" class="input">
-                <i class="fa fa-lock"></i>
-            </div>
+                <div class="box">
+                    <label for="pass" class="label">Senha</label>
+                    <input type="password" name="pass" id="pass" class="input">
+                    <i class="fa fa-lock"></i>
+                </div>
 
-            <div id="passContent">
-                <span>Contém de 6 a 10 caracteres</span>
-                <span>Contém letra maiúscula</span>
-                <span>Contém número</span>
-                <span>Contém caractere especial, ex: @, !, #</span>
-            </div>
+                <div id="passContent">
+                    <span>Contém de 6 a 10 caracteres</span>
+                    <span>Contém letra maiúscula</span>
+                    <span>Contém número</span>
+                    <span>Contém caractere especial, ex: @, !, #</span>
+                </div>
 
-            <span id="error"></span>
+                <span id="error"></span>
 
-            <button type="submit">Criar conta</button>
+                <button type="submit">Criar conta</button>
 
-            <button href="../index.php">Voltar</button>
-        </form>
-        
+                <button href="../index.php">Voltar</button>
+            </form>
+            
+        </div>
     </div>
-</div>
 
-<div id="userCadastrado">
-    <h3>Cadastro Concluído com sucesso 🥳</h3>
-</div>
-
+    <div id="userCadastrado">
+        <h3>Cadastro Concluído com sucesso 🥳</h3>
+    </div>
+    </center>
 </body>
 </html>
